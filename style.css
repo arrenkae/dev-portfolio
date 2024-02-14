@@ -13,8 +13,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #a786dfbe;
+}
+
 nav {
-    background-color: #D9D4E7;
+    background-color: #7d4cb9c0;
     height: 40px;
     display: flex;
     justify-content: flex-end;
@@ -28,7 +32,11 @@ nav a {
     font-family: 'Outfit', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    color: #0e172c;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #ffffffc2;
 }
 
 nav li {
@@ -82,6 +90,7 @@ main h2 {
     list-style-type: none;
     line-height: 2.5;
     word-spacing: 0.6em;
+    padding-left: 0;
 }
 
 .sidebar-links a {
@@ -105,6 +114,15 @@ main h2 {
 #projects {
     background-color: #D1D1E9;
     text-align: center;
+}
+
+#projects a {
+    color: #5d3f80;
+    margin-top: 10px;
+}
+
+#projects a:hover {
+    color: #5d3f80c7;
 }
 
 #gallery_projects {
@@ -131,22 +149,41 @@ main h2 {
     width: 80%;
 }
 
+.project-icons {
+    word-spacing: 0.6em;
+}
+
 #contact h2 {
     margin-bottom: 30px;
 }
 
-#contactme input {
-    margin-bottom: 10px;
+#contactme {
+    max-width: 500px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-footer {
-    background-color: #D9D4E7;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30px;
+#contactme input, textarea {
+    border-radius: 2%;
+    padding: 7px;
+    border-style:solid;
+} 
+
+#contactme button {
+    max-width: 120px;
+    padding: 5px;
+    background-color: #9058d4;
+    border: none;
+    border-radius: 5%;
+    color: #ffffff;
 }
+
+#contactme button:hover {
+    box-shadow: 0 5px 7px rgba(51, 36, 43, 0.486);
+    transform: translateY(2px);
+  }
 
 @media all and (max-width: 768px) {
     nav {
@@ -162,13 +199,16 @@ footer {
     }
     #sidebar {
         background-color: transparent;
+        flex-direction: row;
         padding: 0;
     }
+    #sidebar img {
+        width: 120px;
+        height: 120px;
+        border: none;
+    }
     #gallery_projects {
-        display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin-top: 100px;
     }
 }
 
@@ -181,6 +221,13 @@ footer {
     }
     nav li {
         padding: 5px;
+    }
+    #sidebar {
+        flex-direction: column;
+    }
+    .sidebar-links {
+        display: flex;
+        flex-direction: row;
     }
     .title, article {
         padding: 30px 60px;
