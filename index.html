@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2477da5d08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="title">
+            <h1>Nadezhda Sventsitsky</h1>
+            <h4>Full Stack Developer</h4>
+        </div>
+    </header>
+
+    <main>
+        <article id="intro">
+            <aside id="sidebar">
+                <img src="media/portrait.jpg" alt="portrait" width="150px">
+                <ul class="sidebar-links">
+                    <li><i class="fa-brands fa-github fa-xl" style="color: #B197FC;"></i> <a href="https://github.com/arrenkae">GitHub</a></li>
+                    <li><i class="fa-brands fa-linkedin fa-xl" style="color: #B197FC;"></i> <a href="https://www.linkedin.com/in/arrenkae">LinkedIn</a></li>
+                    <li><i class="fa-solid fa-envelope fa-xl" style="color: #B197FC;"></i> <a href="mailto:stokely@slayers.ru?subject=Port">Email</a></li>
+                </ul>
+            </aside>
+            <section id="about">
+                <h2>About me</h2>
+                    <p>Starting my journey in the wonderful world of software development. Having experience in both creative and technical fields, I am passionate about creating things that work efficiently and look nice, as well as solving complex logical problems along the way. After finishing a full stack development bootcamp, I am now working on personal projects, keep on learning new things and looking for new opportunities to challenge myself and apply my knowledge.</p>
+                    <div class="container_lists">
+                        <section id="skills">
+                            <ul>
+                                <h3>Skills</h3>
+                                <li>HTML & CSS</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>PostgreSQL</li>
+                                <li>Django</li>
+                                <li>Node.js</li>
+                                <li>React</li>
+                                <li>Redux</li>
+                            </ul>
+                        </section>
+                    </div>
+                </h2>
+            </section>
+        </article>
+
+        <article id="projects">
+            <h2>Web Projects</h2>
+            <section id="gallery_projects">
+                <div class="container_project">
+                    <h3>My Media Library</h3>
+                    <img src="media/project-previews/project-media-library.jpg" alt="preview_project2">
+                    <p>A React/Node.js app for creating and maintaining a personal library of tv shows, movies and books. Fething data from multiple APIs, it allows the user to keep track of what they are watching and reading, give ratings and sort their library.</p>
+                    <div class="project-icons">
+                        <i class="fa-brands fa-js fa-2xl"></i>
+                        <i class="fa-solid fa-database fa-2xl"></i>
+                        <i class="fa-brands fa-node-js fa-2xl"></i>
+                        <i class="fa-brands fa-react fa-2xl"></i>
+                    </div>
+                    <a href="https://github.com/arrenkae/my-media-library">github</a>
+                </div>
+                <div class="container_project">
+                    <h3>Don't Worry, Be Happy: Mood and stress tracker</h3>
+                    <img src="media/project-previews/project-mood-tracker.jpg" alt="preview_project2">
+                    <p>A tracker for mood and stress levels running on Node.js server. Allows the user to log their mood, stress and additional factors every day, as well as view and edit previous entries.</p>
+                    <div class="project-icons">
+                        <i class="fa-brands fa-js fa-2xl"></i>
+                        <i class="fa-solid fa-database fa-2xl"></i>
+                        <i class="fa-brands fa-node-js fa-2xl"></i>
+                    </div>
+                    <a href="https://github.com/arrenkae/moodtracker">github</a>
+                </div>
+            </section>
+        </article>
+        
+        <article id="contact">
+            <h2>Contact me</h2>
+            <form action="#" id="contactme">
+                <input type="text" id="name" name="name" placeholder="Your Name"><br>
+                <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" cols="60">
+            </form> 
+        </article>
+
+    </main>
+
+    <footer>
+        <p>(c) 2023</p>
+    </footer>
+</body>
+</html>

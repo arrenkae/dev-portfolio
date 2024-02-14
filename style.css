@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #fffffe;
+    color: #0e172c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #a786df;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #D9D4E7;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0e172c;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.title h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5em;
+}
+
+main h2 {
+    font-family: 'Outfit', sans-serif;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.title, article {
+    padding: 40px 120px 60px 80px;
+}
+
+#intro {
+    flex-basis: 60%;
+    display: flex;
+    gap: 60px;
+}
+
+#sidebar {
+    background-color: #F6F3FF;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+#sidebar img {
+    border-radius: 50%;
+    border: 7px solid #fffffe;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar-links {
+    list-style-type: none;
+    line-height: 2.5;
+    word-spacing: 0.6em;
+}
+
+.sidebar-links a {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container_lists {
+    display: flex;
+    gap: 60px;
+}
+
+.container_lists h3 {
+    margin-bottom: 10px;
+}
+
+.container_lists li {
+    font-size: smaller;
+    padding: 5px;
+}
+
+#projects {
+    background-color: #D1D1E9;
+    text-align: center;
+}
+
+#gallery_projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.container_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_project img {
+    width: 100%;
+    height: auto;
+    border: 1px #0e172c25 solid;
+}
+
+.container_project p {
+    width: 80%;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+#contactme input {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #D9D4E7;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+@media all and (max-width: 768px) {
+    nav {
+      justify-content: flex-start;
+    }
+    .title h1 {
+        font-size: 4em;
+    }
+    #intro {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    #sidebar {
+        background-color: transparent;
+        padding: 0;
+    }
+    #gallery_projects {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width: 412px) {
+    .title h1 {
+        font-size: 3em;
+    }
+    nav a {
+        font-size: smaller;
+    }
+    nav li {
+        padding: 5px;
+    }
+    .title, article {
+        padding: 30px 60px;
+    }
+}
