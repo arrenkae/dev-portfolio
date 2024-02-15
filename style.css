@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #a786df;
+    color: #896dbb;
     text-decoration: none;
 }
 
@@ -90,7 +90,6 @@ main h2 {
     list-style-type: none;
     line-height: 2.5;
     word-spacing: 0.6em;
-    padding-left: 0;
 }
 
 .sidebar-links a {
@@ -116,12 +115,16 @@ main h2 {
     text-align: center;
 }
 
-#projects a {
+.project-links {
+    color: #5d3f8070;
+}
+
+.project-links a {
     color: #5d3f80;
     margin-top: 10px;
 }
 
-#projects a:hover {
+.project-links a:hover {
     color: #5d3f80c7;
 }
 
@@ -228,6 +231,7 @@ main h2 {
     .sidebar-links {
         display: flex;
         flex-direction: row;
+        padding-left: 0;
     }
     .title, article {
         padding: 30px 60px;
